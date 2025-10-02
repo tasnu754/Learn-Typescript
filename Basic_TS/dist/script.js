@@ -75,5 +75,20 @@ person2 = {
 };
 let d;
 d = [2, 9, 54]; // Correct, Array is an object type
+// Dynamic type or any type
+/*===============================*/
+//Variables
+let ab;
+ab = "Hello";
+ab = 34;
+// Arrays
+let names = [];
+names.push("Sonia", 66, "Mila");
+//Objects
+let person3;
+person3 = {
+    name: 344,
+    age: "45"
+};
 export {};
 //# sourceMappingURL=script.js.map
