@@ -33,7 +33,7 @@ gamesArr.push(345); // will take
 let person = {
     name: "Mila",
     age: 25,
-    isFemale: true
+    isFemale: true,
 };
 // person.name = 454 // error
 // person.country = "BD" // error
@@ -64,13 +64,13 @@ let personObj;
 personObj = {
     name: "tasnu",
     age: "25abc",
-    isScame: true
+    isScame: true,
 };
 let person2;
 person2 = {
     name: "tasnu",
     // age: "25abc", // Error
-    age: 34
+    age: 34,
     // isScame: true //Error
 };
 let d;
@@ -88,7 +88,51 @@ names.push("Sonia", 66, "Mila");
 let person3;
 person3 = {
     name: 344,
-    age: "45"
+    age: "45",
+};
+// Function type
+/*===============================*/
+let myFunc;
+myFunc = () => {
+    console.log("Hiii");
+};
+const myFunc2 = (a, b, c) => {
+    console.log(a, b);
+};
+// myFunc2("hello", " world"); //Error
+myFunc2("hello", "world", "guys");
+// Optional parameter
+const myFunc3 = (a, b, c) => {
+    console.log(a, b);
+};
+myFunc3("hello", " world"); //Correct (c is now optional)
+// Default value
+const myFunc4 = (a, b, c = "Guys") => {
+    console.log(a, b);
+};
+myFunc4("hello", " world"); //Correct (c has a default value)
+myFunc4("hello", " world", "Tasnuva"); //Correct
+// Return type define
+const myFunc5 = (a, b) => {
+    return a + b;
+};
+myFunc5("Hello", " World");
+// Type Alias
+/*===============================*/
+const studentDetails = (sid, student
+// Not clean code
+) => {
+    console.log(`Student id is ${sid} and student name is ${student.name}`);
+};
+const hello = (student) => {
+    // Redundant student variable
+    console.log(`Student name is ${student.name}`);
+};
+const studentDetails2 = (sid, student) => {
+    console.log(`Student id is ${sid} and student name is ${student.name}`);
+};
+const hello2 = (student) => {
+    console.log(`Student name is ${student.name}`);
 };
 export {};
 //# sourceMappingURL=script.js.map
