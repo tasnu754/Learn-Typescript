@@ -43,6 +43,12 @@ let gamesArr = ["Ludu", "Caram", 55];
 
 gamesArr.push(345); // will take
 
+const arr = [3, "Hi", { x: 4 }];
+
+arr[0] = { x: 23 };
+arr[1] = 34;
+// arr[0] = false // Cannot assign, as it assume the types (number, string, object) in the declaration
+
 // Objects
 /*===============================*/
 let person = {
@@ -387,3 +393,11 @@ response2 = {
   type: ResTypes.SUCCESS, // O/P: type: 0
   country: "BD",
 };
+
+// TUPLES
+/*===============================*/
+
+let tp: [number, string, object];
+
+tp = [34, "Hi", { p: 4 }];
+// tp = ["Hello", 55, { p: 87 }]; // Error
